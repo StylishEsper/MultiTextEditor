@@ -1,0 +1,14 @@
+C:\Users\Typic\Documents\Work\Y1S2\NETD-2202\NETDLab6\bin\Debug\NETDLab6.exe.config
+C:\Users\Typic\Documents\Work\Y1S2\NETD-2202\NETDLab6\bin\Debug\NETDLab6.exe
+C:\Users\Typic\Documents\Work\Y1S2\NETD-2202\NETDLab6\bin\Debug\NETDLab6.pdb
+C:\Users\Typic\Documents\Work\Y1S2\NETD-2202\NETDLab6\bin\Debug\NETDLab6.xml
+C:\Users\Typic\Documents\Work\Y1S2\NETD-2202\NETDLab6\obj\Debug\NETDLab6.vbprojAssemblyReference.cache
+C:\Users\Typic\Documents\Work\Y1S2\NETD-2202\NETDLab6\obj\Debug\NETDLab6.Resources.resources
+C:\Users\Typic\Documents\Work\Y1S2\NETD-2202\NETDLab6\obj\Debug\NETDLab6.vbproj.GenerateResource.cache
+C:\Users\Typic\Documents\Work\Y1S2\NETD-2202\NETDLab6\obj\Debug\NETDLab6.exe
+C:\Users\Typic\Documents\Work\Y1S2\NETD-2202\NETDLab6\obj\Debug\NETDLab6.xml
+C:\Users\Typic\Documents\Work\Y1S2\NETD-2202\NETDLab6\obj\Debug\NETDLab6.pdb
+C:\Users\Typic\Documents\Work\Y1S2\NETD-2202\NETDLab6\obj\Debug\NETDLab6.frmMain.resources
+C:\Users\Typic\Documents\Work\Y1S2\NETD-2202\NETDLab6\obj\Debug\NETDLab6.frmTextEditor.resources
+C:\Users\Typic\Documents\Work\Y1S2\NETD-2202\NETDLab6\obj\Debug\NETDLab6.frmCarInventory.resources
+C:\Users\Typic\Documents\Work\Y1S2\NETD-2202\NETDLab6\obj\Debug\NETDLab6.frmUnitsShipped.resources

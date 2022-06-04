@@ -1,0 +1,301 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+NETDLab6
+</name>
+</assembly>
+<members>
+<member name="T:NETDLab6.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:NETDLab6.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:NETDLab6.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="M:NETDLab6.Car.#ctor">
+ <summary>
+ Default Constructor - Increment car count, set current car's identification number.
+ </summary>
+</member>
+<member name="M:NETDLab6.Car.#ctor(System.String,System.String,System.Int32,System.Decimal,System.Boolean)">
+ <summary>
+ Parameterized Constructor - Calls default contructor, private variables set using values passed into parameters.
+ </summary>
+ <param name="modelValue"></param>
+ <param name="makeValue"></param>
+ <param name="yearValue"></param>
+ <param name="priceValue"></param>
+ <param name="statusValue"></param>
+</member>
+<member name="P:NETDLab6.Car.Count">
+ <summary>
+ Gets the number of cars that have been created.
+ </summary>
+ <returns>Integer</returns>
+</member>
+<member name="P:NETDLab6.Car.IdentificationNumber">
+ <summary>
+ Gets the specific car identification number.
+ </summary>
+ <returns>Integer</returns>
+</member>
+<member name="P:NETDLab6.Car.Model">
+ <summary>
+ Gets and sets the model name of a car.
+ </summary>
+ <returns>String</returns>
+</member>
+<member name="P:NETDLab6.Car.Make">
+ <summary>
+ Gets and sets the manufacturer name of a car.
+ </summary>
+ <returns>String</returns>
+</member>
+<member name="P:NETDLab6.Car.Year">
+ <summary>
+ Gets and sets the year that the car was manufactured.
+ </summary>
+ <returns>Integer</returns>
+</member>
+<member name="P:NETDLab6.Car.Price">
+ <summary>
+ Gets and sets the price of a car.
+ </summary>
+ <returns>Decimal</returns>
+</member>
+<member name="P:NETDLab6.Car.IsNew">
+ <summary>
+ Gets and sets the used status of a car.
+ </summary>
+ <returns>Boolean</returns>
+</member>
+<member name="M:NETDLab6.Car.GetCarData">
+ <summary>
+ Method - A string that represents the car's data.
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:NETDLab6.frmCarInventory.frmCarInventory_Load(System.Object,System.EventArgs)">
+ <summary>
+ Year combobox data selections created when form loads.
+ </summary>
+</member>
+<member name="M:NETDLab6.frmCarInventory.btnExit_Click(System.Object,System.EventArgs)">
+ <summary>
+ Closes form.
+ </summary>
+</member>
+<member name="M:NETDLab6.frmCarInventory.btnReset_Click(System.Object,System.EventArgs)">
+ <summary>
+ Clears all input controls.
+ </summary>
+</member>
+<member name="M:NETDLab6.frmCarInventory.btnEnter_Click(System.Object,System.EventArgs)">
+ <summary>
+ Checks if input data is valid, if not, displays error message. If data is valid, a new car entry is displayed on 
+ the list view.
+ </summary>
+</member>
+<member name="M:NETDLab6.frmCarInventory.lvwCars_ItemCheck(System.Object,System.Windows.Forms.ItemCheckEventArgs)">
+ <summary>
+ Prevents user from checking a box.
+ </summary>
+</member>
+<member name="M:NETDLab6.frmCarInventory.lvwCars_SelectedIndexChanged(System.Object,System.EventArgs)">
+ <summary>
+ Populate controls if a car is selected in the list view.
+ </summary>
+</member>
+<member name="M:NETDLab6.frmCarInventory.SetDefaults">
+ <summary>
+ Restores input controls to default.
+ </summary>
+</member>
+<member name="M:NETDLab6.frmCarInventory.PopulateList">
+ <summary>
+ Clears and repopulates the car list view.
+ </summary>
+</member>
+<member name="M:NETDLab6.frmCarInventory.isValid">
+ <summary>
+ Validates data in each control, if data invalid displays error message, if valid, add data into list view.
+ </summary>
+ <returns>Boolean</returns>
+</member>
+<member name="P:NETDLab6.frmCarInventory.Instance">
+ <summary>
+ Returns an instance of the Car List form, only allows one form to exist.
+ </summary>
+ <returns>An instance of the Car List form</returns>
+</member>
+<member name="M:NETDLab6.frmMain.mnuFileNew_Click(System.Object,System.EventArgs)">
+ <summary>
+ Creates a new text editor form and opens it.
+ </summary>
+</member>
+<member name="M:NETDLab6.frmMain.mnuFileOpen_Click(System.Object,System.EventArgs)">
+ <summary>
+ Allows a user to select a text file to open. The contents of the text file is opened in a new text editor.
+ </summary>
+</member>
+<member name="M:NETDLab6.frmMain.mnuStripFileSave_Click(System.Object,System.EventArgs)">
+ <summary>
+ Saves the file by calling SaveFile() method in frmTextEditor.
+ </summary>
+</member>
+<member name="M:NETDLab6.frmMain.mnuStripFileSaveAs_Click(System.Object,System.EventArgs)">
+ <summary>
+ Always saves the file in a chosen location with a chosen name by calling SaveFileAs() method in frmTextEditor.
+ </summary>
+</member>
+<member name="M:NETDLab6.frmMain.mnuStripFileClose_Click(System.Object,System.EventArgs)">
+ <summary>
+ Closes currently active (focused) MDI child. If no MDI child is open, prompt to close application.
+ </summary>
+</member>
+<member name="M:NETDLab6.frmMain.mnuStripFileExit_Click(System.Object,System.EventArgs)">
+ <summary>
+ If there are no MDI children open, just closes the main form. If there are, ConfirmClose()'s all MDI children that
+ are text editors.
+ </summary>
+</member>
+<member name="M:NETDLab6.frmMain.mnuEditCut_Click(System.Object,System.EventArgs)">
+ <summary>
+ Cuts text by calling CutText() method in frmTextEditor.
+ </summary>
+</member>
+<member name="M:NETDLab6.frmMain.mnuEditCopy_Click(System.Object,System.EventArgs)">
+ <summary>
+ Copies text by calling CopyText() method in frmTextEditor.
+ </summary>
+</member>
+<member name="M:NETDLab6.frmMain.mnuEditPaste_Click(System.Object,System.EventArgs)">
+ <summary>
+ Pastes text by calling PasteText() method in frmTextEditor.
+ </summary>
+</member>
+<member name="M:NETDLab6.frmMain.mnuWindowsCascade_Click(System.Object,System.EventArgs)">
+ <summary>
+ Change to cascade view.
+ </summary>
+</member>
+<member name="M:NETDLab6.frmMain.mnuWindowsTileVertical_Click(System.Object,System.EventArgs)">
+ <summary>
+ Change to vertical view.
+ </summary>
+</member>
+<member name="M:NETDLab6.frmMain.mnuWindowsTileHorizontal_Click(System.Object,System.EventArgs)">
+ <summary>
+ Change to horizontal view.
+ </summary>
+</member>
+<member name="M:NETDLab6.frmMain.mnuWindowsOpenCarList_Click(System.Object,System.EventArgs)">
+ <summary>
+ Opens car list form. If one is already open, just sets focus to the opened one.
+ </summary>
+</member>
+<member name="M:NETDLab6.frmMain.mnuWindowsOpenAverageUnits_Click(System.Object,System.EventArgs)">
+ <summary>
+ Opens average units form. If one is already open, just sets focus to the opened one.
+ </summary>
+</member>
+<member name="M:NETDLab6.frmMain.mnuStripHelpAbout_Click(System.Object,System.EventArgs)">
+ <summary>
+ MessageBox pops up when user clicks About button. The MessageBox shows lab information.
+ </summary>
+</member>
+<member name="M:NETDLab6.frmTextEditor.txtEditor_TextChanged(System.Object,System.EventArgs)">
+ <summary>
+ Stores the text of the textbox into the variable newFile, whenever text is changed.
+ </summary>
+</member>
+<member name="M:NETDLab6.frmTextEditor.SaveFile">
+ <summary>
+ Allows user to save file when clicked. Calls SaveTextFile() method, giving it a file path.
+ </summary>
+</member>
+<member name="M:NETDLab6.frmTextEditor.SaveFileAs">
+ <summary>
+ Allows user to create a new file in selected location, or overwrite an existing file. Calls SaveTextFile() method,
+ giving it a file path.
+ </summary>
+</member>
+<member name="M:NETDLab6.frmTextEditor.SaveTextFile(System.String)">
+ <summary>
+ Saves the text file using a known file path.
+ </summary>
+ <param name="path"></param>
+</member>
+<member name="M:NETDLab6.frmTextEditor.CopyText">
+ <summary>
+ Stores user selected text into clipboard.
+ </summary>
+</member>
+<member name="M:NETDLab6.frmTextEditor.CutText">
+ <summary>
+ Stores user selected text into clipboard and removes it from the textbox.
+ </summary>
+</member>
+<member name="M:NETDLab6.frmTextEditor.PasteText">
+ <summary>
+ Sets copied text into user selected area.
+ </summary>
+</member>
+<member name="M:NETDLab6.frmTextEditor.ConfirmClose">
+ <summary>
+ Asks user if they want to save the current file that was changed.
+ </summary>
+</member>
+<member name="M:NETDLab6.frmTextEditor.OldFileValue">
+ <summary>
+ Gives oldFile a value taken from frmMain when a file is opened.
+ </summary>
+</member>
+<member name="M:NETDLab6.frmUnitsShipped.frmUnitsShipped_Load(System.Object,System.EventArgs)">
+ <summary>
+ Create an array of textboxes and an array of labels when form loads.
+ </summary>
+</member>
+<member name="M:NETDLab6.frmUnitsShipped.btnExit_Click(System.Object,System.EventArgs)">
+ <summary>
+ It's literally just exit.
+ </summary>
+</member>
+<member name="M:NETDLab6.frmUnitsShipped.btnReset_Click(System.Object,System.EventArgs)">
+ <summary>
+ Reset to defaults by calling SetDefaults()
+ </summary>
+</member>
+<member name="M:NETDLab6.frmUnitsShipped.btnEnter_Click(System.Object,System.EventArgs)">
+ <summary>
+ Save entry in a multiline textbox. If max days reaches, show average. If max employees reached, show total average.
+ </summary>
+</member>
+<member name="M:NETDLab6.frmUnitsShipped.SetDefaults">
+ <summary>
+ Restores the default properties of the form.
+ </summary>
+</member>
+<member name="M:NETDLab6.frmUnitsShipped.UnitsShipped_KeyDown(System.Object,System.Windows.Forms.KeyEventArgs)">
+ <summary>
+ Setting a hotkey for the textbox like this because I don't know if there's a better way to do it.
+ </summary>
+</member>
+<member name="P:NETDLab6.frmUnitsShipped.Instance">
+ <summary>
+ Returns an instance of the Units Shipped form, only allows one form to exist.
+ </summary>
+ <returns>An instance of the Car List form</returns>
+</member>
+</members>
+</doc>
